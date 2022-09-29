@@ -9,18 +9,18 @@ def funcion(x):
         st.append(i) #ingresamos los valores a la lista 
     return(st)
 num=funcion(x)  #mandamos a llammar la funcion
-print(num)
+print("numeros:",num)
     
 def primos(x): 
-    cadena=[]
-    for i in range(1, x+1): #contador para 
-        p = 0
-        for j in range(1, i+1):
-            if i % j == 0:
-                p += 1
-        if p == 2:
-            cadena.append(i)
-    return(cadena)
+    cad=[] #Declaramos la lista 
+    for i in range(1, x+1): # hacemos un ciclo para desglozar el numero dado 
+        p = 0 #contador
+        for j in range(1, i+1): #Ciclo para recorrer todos los numeros desglozados
+            if i % j == 0: #verificar numeros primos y sumar al contador
+                p += 1 
+        if p == 2: #Para los que son numeros primos  los ingresamos a la lista 
+            cad.append(i)
+    return(cad)
 Prim=primos(x) # mandamos a llammar la funcion
 
 print("Primos:", Prim)
