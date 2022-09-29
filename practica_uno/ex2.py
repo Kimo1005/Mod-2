@@ -8,8 +8,8 @@ def funcion(x):
     for i in range(1, x+1): # hacemos un ciclo para desglozar el numero dado 
         st.append(i) #ingresamos los valores a la lista 
     return(st)
-st=funcion(x)
-print(st)
+num=funcion(x)  #mandamos a llammar la funcion
+print(num)
     
 def primos(x): 
     cadena=[]
@@ -21,8 +21,9 @@ def primos(x):
         if p == 2:
             cadena.append(i)
     return(cadena)
-cadena=primos(x)
-print("Primos:", cadena)
+Prim=primos(x) # mandamos a llammar la funcion
+
+print("Primos:", Prim)
     
     #ingresamos el dato 
         
